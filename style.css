@@ -1,0 +1,68 @@
+:root {
+    --primary-font-color: rgb(2, 128, 160);
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.nav-center {
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 1px 5px 5px rgba(0,0,0,0.3);
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 999;
+}
+.nav-center .nav-title {
+    margin: 0px;
+    font-size: 2rem;
+    color: var(--primary-font-color);
+}
+.nav-center .counter-link {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > * {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container .color-text {
+    font-size: 2rem;
+}
+
+.container .color-text .color-text__code {
+    color: var(--primary-font-color);
+}
+
+.btn {
+    font: inherit;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

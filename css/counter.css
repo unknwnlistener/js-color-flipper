@@ -1,0 +1,30 @@
+.container > * {
+    background-color: white;
+    color: black;
+}
+
+.counter-header {
+    font-size: 3rem;
+}
+
+.counter-value {
+    font-size: 4rem;
+}
+
+.button-container {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    margin: 0 10px;
+    padding: 5px;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s linear;
+}
