@@ -26,12 +26,27 @@ html,body {
     font-size: 2rem;
     color: var(--primary-font-color);
 }
-.nav-center .counter-link {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: rgb(65, 65, 65);
+.nav-center .nav-links {
+    height: 100%;
     cursor: pointer;
+    display: inline-flex;
+}
+
+.nav-center .nav-links .nav-links__counter {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+    /* cursor: pointer; */
     text-decoration: none;
+}
+.nav-center .nav-links .nav-links__counter.active-link {
+    cursor: default;
+    background: var(--primary-font-color);
+    color: white;
 }
 
 .container {
